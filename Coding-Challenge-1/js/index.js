@@ -24,6 +24,7 @@ const searchMeal = () => {
 
 	document.querySelector(".js-search-form").addEventListener("submit", (e) => {
 		e.preventDefault();
+		container.innerHTML = "";
 
 		const mealName = document.querySelector("#query").value;
 
