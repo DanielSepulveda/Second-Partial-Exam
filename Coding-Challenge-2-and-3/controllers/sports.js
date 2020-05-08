@@ -16,8 +16,6 @@ exports.delete = async (req, res) => {
 		return res.status(406).end();
 	}
 
-	console.log(id, sportId);
-
 	if (id != sportId) {
 		res.statusMessage =
 			"The passed 'id' and 'sportId' values do not match. Please provide valid fields to delete.";
